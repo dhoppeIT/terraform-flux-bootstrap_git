@@ -47,30 +47,30 @@ variable "gpg_passphrase" {
   description = "Passphrase for decrypting GPG private key"
 }
 
-variable "http_allow_insecure_http" {
-  type        = bool
-  default     = false
-  description = "Allows http Git URL connections"
-}
-
-variable "http_certificate_authority" {
-  type        = string
-  default     = null
-  description = "Certificate authority to validate self-signed certificates"
-}
-
-variable "http_password" {
-  type        = string
-  default     = null
-  sensitive   = true
-  description = "Password for basic authentication"
-}
-
-variable "http_username" {
-  type        = string
-  default     = null
-  description = "Username for basic authentication"
-}
+# variable "http_allow_insecure_http" {
+#   type        = bool
+#   default     = false
+#   description = "Allows http Git URL connections"
+# }
+#
+# variable "http_certificate_authority" {
+#   type        = string
+#   default     = null
+#   description = "Certificate authority to validate self-signed certificates"
+# }
+#
+# variable "http_password" {
+#   type        = string
+#   default     = null
+#   sensitive   = true
+#   description = "Password for basic authentication"
+# }
+#
+# variable "http_username" {
+#   type        = string
+#   default     = null
+#   description = "Username for basic authentication"
+# }
 
 variable "ssh_hostkey_algos" {
   type        = list(string)

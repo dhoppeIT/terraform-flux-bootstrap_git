@@ -8,18 +8,18 @@ provider "flux" {
     gpg_key_id              = var.gpg_key_id
     gpg_key_ring            = var.gpg_key_ring
     gpg_passphrase          = var.gpg_passphrase
-    http = regex("([a-z]+):", var.url) == "http" ? {
-      allow_insecure_http   = var.http_allow_insecure_http
-      certificate_authority = var.http_certificate_authority
-      password              = var.http_password
-      username              = var.http_username
-    } : null
-    ssh = regex("([a-z]+):", var.url) == "ssh" ? {
+    # http = {
+    #   allow_insecure_http   = var.http_allow_insecure_http
+    #   certificate_authority = var.http_certificate_authority
+    #   password              = var.http_password
+    #   username              = var.http_username
+    # }
+    ssh = {
       hostkey_algos = var.ssh_hostkey_algos
       password      = var.ssh_password
       private_key   = var.ssh_private_key
       username      = var.ssh_username
-    } : null
+    }
   }
 
   kubernetes = {

@@ -59,10 +59,6 @@ No resources.
 | <a name="input_gpg_key_ring"></a> [gpg\_key\_ring](#input\_gpg\_key\_ring) | Path to the GPG key ring for signing commit | `string` | `null` | no |
 | <a name="input_gpg_passphrase"></a> [gpg\_passphrase](#input\_gpg\_passphrase) | Passphrase for decrypting GPG private key | `string` | `null` | no |
 | <a name="input_host"></a> [host](#input\_host) | The hostname (in form of URI) of Kubernetes master | `string` | `null` | no |
-| <a name="input_http_allow_insecure_http"></a> [http\_allow\_insecure\_http](#input\_http\_allow\_insecure\_http) | Allows http Git URL connections | `bool` | `false` | no |
-| <a name="input_http_certificate_authority"></a> [http\_certificate\_authority](#input\_http\_certificate\_authority) | Certificate authority to validate self-signed certificates | `string` | `null` | no |
-| <a name="input_http_password"></a> [http\_password](#input\_http\_password) | Password for basic authentication | `string` | `null` | no |
-| <a name="input_http_username"></a> [http\_username](#input\_http\_username) | Username for basic authentication | `string` | `null` | no |
 | <a name="input_insecure"></a> [insecure](#input\_insecure) | Whether server should be accessed without verifying the TLS certificate | `bool` | `false` | no |
 | <a name="input_password"></a> [password](#input\_password) | The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint | `string` | `null` | no |
 | <a name="input_proxy_url"></a> [proxy\_url](#input\_proxy\_url) | URL to the proxy to be used for all API requests | `string` | `null` | no |
