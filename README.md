@@ -12,7 +12,7 @@ specify the required variables and run the command `terraform init`.
 ```hcl
 module "flux_bootstrap_git" {
   source  = "gitlab.com/terraform-child-modules-48151/terraform-flux-bootstrap-git/local"
-  version = "1.0.0"
+  version = "1.0.1"
 
   path = "clusters/example"
 }
